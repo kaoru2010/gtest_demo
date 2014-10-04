@@ -1,3 +1,5 @@
+import notfile ;
+
 use-project /gtest : vendor/gtest ;
 project demo1
     :   requirements
@@ -6,3 +8,11 @@ project demo1
         <include>gtest-1.7.0
         <threading>multi
     ;
+
+notfile init : @init ;
+actions init
+{
+    git submodule update --init --recursive
+}
+
+explicit init ;
