@@ -1,0 +1,11 @@
+lib gtest
+    :
+    ./gtest-1.7.0/src/gtest-all.cc
+    :
+    <include>gtest-1.7.0/include
+    <include>gtest-1.7.0
+    <link>static
+    :
+    :
+    <include>gtest-1.7.0/include
+    ;

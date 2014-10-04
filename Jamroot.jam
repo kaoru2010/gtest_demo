@@ -1,0 +1,8 @@
+use-project /gtest : vendor/gtest ;
+project demo1
+    :   requirements
+        <toolset>gcc:<cxxflags>-std=gnu++0x
+        <toolset>clang:<cxxflags>-std=c++11
+        <include>gtest-1.7.0
+        <threading>multi
+    ;

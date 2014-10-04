@@ -1,0 +1,5 @@
+import testing ;
+
+run hello_gtest.cpp
+    /gtest
+    ;
